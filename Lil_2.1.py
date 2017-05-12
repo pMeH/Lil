@@ -330,7 +330,7 @@ Type --h for help
             file.close()
 
             if exit == "r" or exit == "R":
-                os.startfile("LostinLife2.1+intro.py")
+                os.startfile("Lil_2.1.py")
 
 except:
     os.system('cls' if os.name == 'nt' else 'clear')
