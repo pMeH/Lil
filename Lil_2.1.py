@@ -174,7 +174,7 @@ try:
             print("""
 Welcome to Lost in life's help utility!
 
-If this is your first time using Lost in life folow this steps:
+If this is your first time using Lost in life follow this steps:
 
     -p                  Player
     -r                  Region
