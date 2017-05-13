@@ -1,7 +1,5 @@
 # Lost in Life
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
 Lost in Life is released under a GNU license (see Lil Licensing for full details).
 Lil returns data from: op.gg and loltimeplayed.com and provides additional information based on calculations with that data.
 
