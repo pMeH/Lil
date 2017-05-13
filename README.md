@@ -1,6 +1,6 @@
 # Lost in Life
 
-Lost in Life is released under a Apache License (see Lil Licensing for full details).
+Lost in Life is released under an Apache License (see Lil Licensing for full details).
 Lil returns data from: op.gg and loltimeplayed.com and provides additional information of an account of League of Legends, based on calculations with that data.
 
 Questions and suggestions may be sent to pmeh@mail.com
