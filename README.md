@@ -3,7 +3,7 @@
 Lost in Life is released under a GNU license (see Lil Licensing for full details).
 Lil returns data from: op.gg and loltimeplayed.com and provides additional information based on calculations with that data.
 
-Questions and suggestions may be sent to the pmeh@mail.com
+Questions and suggestions may be sent to pmeh@mail.com
 
 # Using Lil
 
