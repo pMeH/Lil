@@ -1,4 +1,4 @@
-# Version 2.0 date 12/05/2017 for windows
+# Version 2.2 date 12/05/2017 for windows
 
 from funcoes import *
 import requests
@@ -187,7 +187,7 @@ Type --h for help
             file.close()
 
             if exit == "r" or exit == "R":
-                os.startfile("Lil_2.2.py")
+                os.startfile("Lil.py")
 
 except:
     os.system('cls' if os.name == 'nt' else 'clear')
