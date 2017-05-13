@@ -23,4 +23,5 @@ pip install bs4
 
 # Authors
 
-pMeH
+* **pMeH**
+
