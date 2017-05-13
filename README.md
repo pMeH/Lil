@@ -1,6 +1,9 @@
 # Lost in Life
 
-Lost in Life is released under a GNU license. See Lil Licensing for full details.
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+
+Lost in Life is released under a GNU license (see Lil Licensing for full details).
+Lil returns data from: op.gg and loltimeplayed.com and provides additional information based on calculations with that data.
 
 Questions and suggestions may be sent to the pmeh@mail.com
 
@@ -9,13 +12,22 @@ Questions and suggestions may be sent to the pmeh@mail.com
 Lil has a lot of features. 
 Running Lil will give a helpful list of the most common options.
 
-# Compatibility
+# Prerequisites
 
-Lil is a program intended for windows and is compatible with python 3.x.
+Lil is a program intended for windows and is only compatible with python 3.x.
 
 # Needed libs:
 
 Request
+```sh
+pip install request
+```
+
 Bs4
+```sh
+pip install bs4
+```
 
+# Authors
 
+pMeH
