@@ -21,7 +21,7 @@ Bs4
 pip install bs4
 ```
 
-# Authors
+# Author
 
 * **pMeH**
 
