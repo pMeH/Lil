@@ -11,9 +11,9 @@ Lil is a program intended for windows and is only compatible with python 3.x.
 
 # Needed libs:
 
-Request
+Requests
 ```sh
-pip install request
+pip install requests
 ```
 
 Bs4
