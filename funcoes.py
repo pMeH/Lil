@@ -2,16 +2,51 @@ import os
 import time
 from datetime import datetime
 
-# Função intro
-def intro():
+# Função começo
+def comeco():
+    print(""".            .              .      ,_
+|    ,-. ,-. |-    . ,-.    |    . |_ ,-.
+|    | | `-. |     | | |    |    | |  |-'
+`--' `-' `-' `'    ' ' '    `--' ' |  `-'
 
+Available Regions:
+
+euw, na, eune, br, lan, las, oce, ru, tr, kr.
+
+Type --h for help
+""")
+
+# Função help
+
+def help():
+    print("""
+Welcome to Lost in life's help utility!
+
+If this is your first time using Lost in life follow this steps:
+
+    -p                  Player
+    -r                  Region
+    -b                  Birthdate
+
+Optional:
+
+    clear               Clear screen
+    -P                  Proxy
+
+e.g. -p Hide on bush -r kr -b 7/5/1996
+""")
+
+# Função som
+def som():
     file = open("testfile.txt","w")
     file.write("")
     file.close()
-
     os.startfile("som.py")
-    os.system('color C')
 
+# Função end
+def end():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('color C')
     print("""███▓███████▓▓╬╬╬╬╬╬╬╬╬╬╬╬▓███▓▓▓▓█▓╬╬╬▓█
 ███████▓█████▓▓╬╬╬╬╬╬╬╬▓███▓╬╬╬╬╬╬╬▓╬╬▓█""")
     time.sleep(0.1)
@@ -86,7 +121,6 @@ def intro():
     time.sleep(0.1)
     os.system('color F')
     time.sleep(0.1)
-
 
     os.system('cls' if os.name == 'nt' else 'clear')
     os.system('color A')

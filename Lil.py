@@ -1,4 +1,4 @@
-# Version 2.2 date 12/05/2017 for windows
+# Version 2.3 date 14/05/2017 for windows
 
 from funcoes import *
 import requests
@@ -7,55 +7,18 @@ import math
 import os
 import time
 
-intro()
-
 os.system('color F')
-
-print(""".            .              .      ,_
-|    ,-. ,-. |-    . ,-.    |    . |_ ,-.
-|    | | `-. |     | | |    |    | |  |-'
-`--' `-' `-' `'    ' ' '    `--' ' |  `-'
-
-Available Regions:
-
-euw, na, eune, br, lan, las, oce, ru, tr, kr.
-
-Type --h for help
-""")
-
+som()
+comeco()
 
 try:
     while True:
-        main = input(">>> ")
+        main = input("%s> " % (os.path.expanduser("~/funcoes.py")))
         if main in ("help", "h", "--h", "-h", "--help", "-help"):
-            print("""
-Welcome to Lost in life's help utility!
-
-If this is your first time using Lost in life follow this steps:
-
-    -p                  Player
-    -r                  Region
-    -b                  Birthdate
-
-Optional:
-
-    -P                  Proxy
-
-e.g. -p Hide on bush -r kr -b 7/5/1996
-""")
+            help()
         elif main in ("-c", 'c', 'clear', '--c', '--clear', '-clear'):
             os.system('cls' if os.name == 'nt' else 'clear')
-            print(""".            .              .      ,_
-|    ,-. ,-. |-    . ,-.    |    . |_ ,-.
-|    | | `-. |     | | |    |    | |  |-'
-`--' `-' `-' `'    ' ' '    `--' ' |  `-'
-
-Available Regions:
-
-euw, na, eune, br, lan, las, oce, ru, tr, kr.
-
-Type --h for help
-""")
+            comeco()
         else:
             player_com_espaço = descript(main)[0]
             player = ""
@@ -96,7 +59,7 @@ Type --h for help
         calculos = (tempolol * 100)/(dias * 24)
         porcento = str("%.2f" % calculos) + str("%")
 
-        # Antes do resultado, pegar os dados do player com uma adaptação do codigo de ISyther (https://github.com/ISyther/LoLSearch/blob/master/LolSearch.py)
+        # Antes do resultado, pegar os dados do player com uma adaptação do codigo - cheio de falhas hue - de ISyther (https://github.com/ISyther/LoLSearch/blob/master/LolSearch.py)
 
         url = 'https://%s.op.gg/summoner/userName=%s' % (region, player)
         req=requests.get(url, proxies=proxy)
@@ -185,6 +148,7 @@ Type --h for help
             file = open("testfile.txt","w")
             file.write("ola")
             file.close()
+            end()
 
             if exit == "r" or exit == "R":
                 os.startfile("Lil.py")
@@ -192,5 +156,5 @@ Type --h for help
 except:
     os.system('cls' if os.name == 'nt' else 'clear')
     os.system('color C')
-    print("Error inesperado.")
+    print("Unexpected error.")
     time.sleep(5)
