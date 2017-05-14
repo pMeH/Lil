@@ -1,7 +1,7 @@
 import winsound
 import os
 os.system('mode con: cols=40 lines=8')
-
+os.system('color C')
 print("""
 ███╗   ███╗██╗   ██╗███████╗██╗ ██████╗
 ████╗ ████║██║   ██║██╔════╝██║██╔════╝
