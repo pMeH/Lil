@@ -1,4 +1,4 @@
-# Version 2.3 date 14/05/2017 for windows
+﻿# Version 2.3 date 14/05/2017 for windows
 
 from funcoes import *
 import requests
@@ -13,7 +13,7 @@ comeco()
 
 try:
     while True:
-        main = input("%s> " % (os.path.expanduser("~/funcoes.py")))
+        main = input("%s> " % (os.path.abspath('Lil.py')))
         if main in ("help", "h", "--h", "-h", "--help", "-help"):
             help()
         elif main in ("-c", 'c', 'clear', '--c', '--clear', '-clear'):
